@@ -1,0 +1,31 @@
+name: End-To-End Tests
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  e2e-tests:
+
+    runs-on: ubuntu-20.04
+
+    continue-on-error: true
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.15.x
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Run End-To-End Test
+        run: |
+          export ANDROID_HOME=~/Library/Android/sdk
+          export PATH=$PATH:$ANDROID_HOME/tools/:$ANDROID_HOME/platform-tools
+          npm run e2e:cucumber:android:suite_product

@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "esModuleInterop": true,
+        "module": "CommonJS",
+        "removeComments": true,
+        "rootDir": ".",
+        "sourceMap": false,
+        "strictPropertyInitialization": true,
+        "strictNullChecks": true,
+        "target": "ESNext",
+        "types": [
+            "node",
+            "expect-webdriverio",
+            "@wdio/globals/types",
+            "@wdio/cucumber-framework",
+            "@wdio/browserstack-service"
+        ],
+    },
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
