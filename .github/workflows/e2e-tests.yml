@@ -24,16 +24,27 @@ jobs:
       - name: Install
         run: npm ci
 
+      #- name: Install and start the emulator
+      #  run: |
+      #    chmod +x ./emulator.sh
+      #    ./emulator.sh
+      #  shell: bash
+
+      #- name: Start the Appium Server
+      #  run: ./node_modules/.bin/appium --log-timestamp --log-no-colors --allow-insecure chromedriver_autodownload > logs/appium.log
+
+      #- name: Poll for Appium Server to Start
+      #  run: |
+      #    until $(curl --output /dev/null --silent --head --fail http://127.0.0.1:4723/wd/hub/sessions); do
+      #      sleep 5
+      #    done
+
       - name: Run End-To-End Test
-        #uses: reactivecircus/android-emulator-runner@v2
-        #with:
-          #api-level: 29
-          #script: ./gradlew connectedAndroidTest
-        run: |
-          chmod +x ./emulator.sh
-          ./emulator.sh
-          npm run e2e:cucumber:android:suite_product
-        shell: bash
+        #run: npm run e2e:cucumber:android:suite_product
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 29
+          script: npm run e2e:cucumber:android:suite_product
 
       - name: Upload Logs
         uses: actions/upload-artifact@v3

@@ -1,10 +1,9 @@
 #!/bin/bash
 
-echo $ANDROID_HOME
 echo "ANDROID_HOME=~/Library/Android/sdk" >> $GITHUB_ENV
+echo "emulator=~/Library/Android/sdk/emulator" >> $GITHUB_ENV
 echo "PATH=$PATH:$ANDROID_HOME/tools/:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/emulator" >> $GITHUB_ENV
-echo $ANDROID_HOME
-appium -v
+#appium -v
 #which adb
 #adb devices
 #which emulator
