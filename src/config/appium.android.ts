@@ -30,7 +30,7 @@ export const config: WebdriverIO.Config = {
             browserName: 'chrome',
             'appium:deviceName': 'emulator-5554', // real: R58M7193KHH
             'appium:platformVersion': '10', // real: 11
-            // 'appium:automationName': 'UiAutomator2',
+            'appium:automationName': 'UiAutomator2',
             'appium:orientation': 'PORTRAIT',
             'appium:newCommandTimeout': 240,
             'appium:noReset': true,
