@@ -29,7 +29,7 @@ jobs:
         run: |
           which appium
           appium -v
-          appium &
+      #    appium &
 
       - name: Run End-To-End Test
         uses: reactivecircus/android-emulator-runner@v2
