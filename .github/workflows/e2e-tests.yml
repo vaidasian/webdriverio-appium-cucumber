@@ -25,15 +25,15 @@ jobs:
         run: npm ci
 
       - name: Run End-To-End Test
+        #uses: reactivecircus/android-emulator-runner@v2
+        #with:
+          #api-level: 29
+          #script: ./gradlew connectedAndroidTest
         run: |
-          export ANDROID_HOME=~/Library/Android/sdk
-          export PATH=$PATH:$ANDROID_HOME/tools/:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/emulator
-          echo $ANDROID_HOME
-          which adb
-          adb devices
-          which emulator
-          emulator -list-avds
+          chmod +x ./emulator.sh
+          ./emulator.sh
           npm run e2e:cucumber:android:suite_product
+        shell: bash
 
       - name: Upload Logs
         uses: actions/upload-artifact@v3
