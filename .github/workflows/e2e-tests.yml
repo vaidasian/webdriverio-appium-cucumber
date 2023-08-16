@@ -30,8 +30,7 @@ jobs:
           which appium
           appium -v
           appium driver install uiautomator2
-          appium &
-        #appium --allow-insecure chromedriver_autodownload --address localhost --base-path / --port 4723 --relaxed-security --debug-log-spacing --log logs/appium-log &
+          appium --allow-insecure chromedriver_autodownload --address localhost --base-path / --port 4723 --relaxed-security --debug-log-spacing --log logs/appium-log &
 
       - name: Run End-To-End Test
         uses: reactivecircus/android-emulator-runner@v2
