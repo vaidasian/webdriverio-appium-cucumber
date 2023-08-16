@@ -24,7 +24,14 @@ jobs:
       - name: Install
         run: |
           npm ci
-      #    npm i -g appium
+          npm i -g appium
+
+      - name: Start Appium
+        run: |
+          which appium
+          appium -v
+          appium driver install uiautomator2
+          appium &
 
       - name: Run End-To-End Test
         uses: reactivecircus/android-emulator-runner@v2
@@ -38,9 +45,6 @@ jobs:
           disable-animations: true
           emulator-build: 7425822
           script: npm run e2e:cucumber:android:suite_product
-
-      #- name: Start Appium
-      #  run: appium &
 
       - name: Upload Logs
         uses: actions/upload-artifact@v3
