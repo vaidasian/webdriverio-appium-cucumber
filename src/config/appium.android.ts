@@ -8,6 +8,15 @@ export const config: WebdriverIO.Config = {
         services: [
             ['appium', {
                 command: "appium",
+                args: {
+                    allowInsecure: true,
+                    chromedriver_autodownload: true,
+                    address: 'localhost',
+                    basePath: '/',
+                    port: 4723,
+                    relaxedSecurity: true,
+                    debugLogSpacing: true,
+                },
             }],
         ],
         //*/
