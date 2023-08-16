@@ -16,6 +16,7 @@ export const config: WebdriverIO.Config = {
                     port: 4723,
                     relaxedSecurity: true,
                     debugLogSpacing: true,
+                    log: 'logs/appium.log',
                 },
             }],
         ],
@@ -29,5 +30,6 @@ export const config: WebdriverIO.Config = {
             'appium:orientation': 'PORTRAIT',
             'appium:newCommandTimeout': 240,
             'appium:noReset': true,
+            'appium:uiautomator2ServerLaunchTimeout': 200000,
         }],
 }
