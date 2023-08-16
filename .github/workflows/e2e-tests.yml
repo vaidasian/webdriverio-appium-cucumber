@@ -15,38 +15,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Setup JDK 1.8
-        uses: actions/setup-java@v2
-        with:
-          java-version: '8'
-          distribution: 'adopt'
-
       - name: Setup node
         uses: actions/setup-node@v3
         with:
           node-version: 18.15.x
           cache: npm
 
-      - name: Get cache key for node_modules
-        id: cache-node-modules
-        run: echo "::set-ouput name=date::$(date + '%>-%m-%W')"
+      #- name: Install
+      #  run: |
+      #    npm ci
+      #    npm i -g appium
 
-      - name: Cache node_modules
-        uses: actions/cache@v2
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-node-modules-${{ steps.cache-node-modules.outputs.date }}-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-modules-${{ steps.cache-node-modules.outputs.date }}-
-            ${{ runner.os }}-node-modules-
-
-      - name: Install
-        run: |
-          npm ci
-          npm i -g appium
-
-      - name: Install and start the emulator
-        run: bash emulator.sh
+      #- name: Install and start the emulator
+      #  run: bash emulator.sh
 
       #- name: Start the Appium Server
       #  run: ./node_modules/.bin/appium --log-timestamp --log-no-colors --allow-insecure chromedriver_autodownload > logs/appium.log
@@ -57,12 +38,14 @@ jobs:
       #      sleep 5
       #    done
 
-      #- name: Run End-To-End Test
-      #  run: npm run e2e:cucumber:android:suite_product
-      #  uses: reactivecircus/android-emulator-runner@v2
-      #  with:
-      #    api-level: 29
-      #    script: npm run e2e:cucumber:android:suite_product
+      - name: Run End-To-End Test
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 29
+          target: default
+          arch: x86_64
+          profile: Nexus 6
+          script: npm run e2e:cucumber:android:suite_product
 
       #- name: Install and start the emulator
       #  run: |
@@ -72,11 +55,11 @@ jobs:
       #- name: Start the Appium Server
       #  run: bash android-wait-for-emulator.sh
 
-      - name: Start Appium
-        run: appium &
+      #- name: Start Appium
+      #  run: appium &
 
-      - name: Run End-To-End Test
-        run: npm run e2e:cucumber:android:suite_product
+      #- name: Run End-To-End Test
+      #  run: npm run e2e:cucumber:android:suite_product
 
       - name: Upload Logs
         uses: actions/upload-artifact@v3
