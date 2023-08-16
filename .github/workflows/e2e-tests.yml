@@ -30,7 +30,6 @@ jobs:
         run: |
           which appium
           appium -v
-          appium driver install uiautomator2
           appium &
 
       - name: Run End-To-End Test
