@@ -5,10 +5,15 @@ dotenv.config();
 
 export const config: WebdriverIO.Config = {
     ...sharedConfig,
-        /*
-        services: ['appium'],
-        //*/
         ///*
+        services: [
+            ['appium', {
+                command: "appium",
+                },
+            ],
+        ],
+        //*/
+        /*
         // [optional] cannot run with only @wdio/appium-service
         services: [
             ['appium', {
