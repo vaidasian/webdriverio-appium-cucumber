@@ -45,11 +45,8 @@ jobs:
           npm ci
           npm i -g appium
 
-      #- name: Install and start the emulator
-      #  run: |
-      #    chmod +x ./emulator.sh
-      #    ./emulator.sh
-      #  shell: bash
+      - name: Install and start the emulator
+        run: bash emulator.sh
 
       #- name: Start the Appium Server
       #  run: ./node_modules/.bin/appium --log-timestamp --log-no-colors --allow-insecure chromedriver_autodownload > logs/appium.log
@@ -67,17 +64,13 @@ jobs:
       #    api-level: 29
       #    script: npm run e2e:cucumber:android:suite_product
 
-      - name: Install and start the emulator
-        run: |
-          echo "no" | $ANDROID_HOME/tools/bin/avdmanager create avd --force --name Pixel_3a_API_34_extension_level_7_arm64-v8a --abi google_apis_playstore/x86_64 --package "system-images;android-29;google_apis_playstore/x86_64"
-          $ANDROID_HOME/emulator/emulator -avd Pixel_3a_API_34_extension_level_7_arm64-v8a -no-window -no-audio -no-boot-anim &
+      #- name: Install and start the emulator
+      #  run: |
+      #    echo "no" | $ANDROID_HOME/tools/bin/avdmanager create avd --force --name Pixel_3a_API_34_extension_level_7_arm64-v8a --abi google_apis_playstore/x86_64 --package "system-images;android-29;google_apis_playstore/x86_64"
+      #    $ANDROID_HOME/emulator/emulator -avd Pixel_3a_API_34_extension_level_7_arm64-v8a -no-window -no-audio -no-boot-anim &
 
-      - name: Start the Appium Server
-        run: |
-          chmod +x ./android-wait-for-emulator.sh
-          ./android-wait-for-emulator.sh
-          adb shell input keyevent 82
-        shell: bash
+      #- name: Start the Appium Server
+      #  run: bash android-wait-for-emulator.sh
 
       - name: Start Appium
         run: appium &
