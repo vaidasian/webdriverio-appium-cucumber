@@ -22,21 +22,21 @@ jobs:
       - name: Install
         run: |
           npm ci
-      #    npm i -g appium
+          npm i -g appium
 
       - name: Start Appium
         continue-on-error: true
         run: |
           which appium
           appium -v
-      #    appium &
+          appium &
 
       - name: Run End-To-End Test
         uses: reactivecircus/android-emulator-runner@v2
         continue-on-error: true
         with:
           api-level: 29
-          target: default
+          target: google_apis
           arch: x86_64
           profile: Nexus 6
           emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none
