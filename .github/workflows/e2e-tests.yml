@@ -21,22 +21,10 @@ jobs:
           node-version: 18.15.x
           cache: npm
 
-      #- name: Install
-      #  run: |
-      #    npm ci
+      - name: Install
+        run: |
+          npm ci
       #    npm i -g appium
-
-      #- name: Install and start the emulator
-      #  run: bash emulator.sh
-
-      #- name: Start the Appium Server
-      #  run: ./node_modules/.bin/appium --log-timestamp --log-no-colors --allow-insecure chromedriver_autodownload > logs/appium.log
-
-      #- name: Poll for Appium Server to Start
-      #  run: |
-      #    until $(curl --output /dev/null --silent --head --fail http://127.0.0.1:4723/wd/hub/sessions); do
-      #      sleep 5
-      #    done
 
       - name: Run End-To-End Test
         uses: reactivecircus/android-emulator-runner@v2
@@ -47,19 +35,8 @@ jobs:
           profile: Nexus 6
           script: npm run e2e:cucumber:android:suite_product
 
-      #- name: Install and start the emulator
-      #  run: |
-      #    echo "no" | $ANDROID_HOME/tools/bin/avdmanager create avd --force --name Pixel_3a_API_34_extension_level_7_arm64-v8a --abi google_apis_playstore/x86_64 --package "system-images;android-29;google_apis_playstore/x86_64"
-      #    $ANDROID_HOME/emulator/emulator -avd Pixel_3a_API_34_extension_level_7_arm64-v8a -no-window -no-audio -no-boot-anim &
-
-      #- name: Start the Appium Server
-      #  run: bash android-wait-for-emulator.sh
-
       #- name: Start Appium
       #  run: appium &
-
-      #- name: Run End-To-End Test
-      #  run: npm run e2e:cucumber:android:suite_product
 
       - name: Upload Logs
         uses: actions/upload-artifact@v3
