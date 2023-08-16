@@ -3,6 +3,7 @@
 ```bash
 [Steps to reproduce]
 Provided sample can be locally executed as follows:
+adapt android device here ./src/config/appium.android.ts
 npm i
 npm run e2e:cucumber:android:suite_product
 
@@ -41,15 +42,4 @@ When 2 out of 3 scenarios in the feature file "./src/features/product/product.fe
 then no error will occur, see ./bugs/2023-08-15_appium_wdio_retry_single_scenario_no_issue_wdio-0-0.log.
 
 Question: How to best use Cucumber's retry logic on appium w/o getting errors? 
-
-[Optional bug]
-I was not able to run the test with "@wdio/appium-service" and appium installed locally within project scope (not global).
-Appium was started and is reachable at https://localhost:4723/wd/hub/status, see ./bugs/2023-08-15_wdio-appium-service_appium.log.
-See also wdio log ./bugs/2023-08-15_wdio-appium-service_wdio.log.
-echo $ANDROID_HOME
-~/Library/Android/sdk
-which adb
-~/Library/Android/sdk/platform-tools/adb
-
-Question: How can I run appium tests with @wdio/appium-service and appium installed with npm in project scope?
 ```

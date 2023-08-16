@@ -5,27 +5,17 @@ dotenv.config();
 
 export const config: WebdriverIO.Config = {
     ...sharedConfig,
-        ///*
-        services: [
-            ['appium', {
-                command: "appium",
-                },
-            ],
-        ],
-        //*/
-        /*
-        // [optional] cannot run with only @wdio/appium-service
         services: [
             ['appium', {
                 command: "appium",
                 args: {
+                    allowInsecure: true,
+                    chromedriver_autodownload: true,
                     address: 'localhost',
-                    basePath: '/wd/hub',
+                    basePath: '/',
                     port: 4723,
                     relaxedSecurity: true,
                     debugLogSpacing: true,
-                    log: './logs/2023-08-16_wdio-appium-service_appium.log',
-                    logLevel: 'error:debug',
                 },
             }],
         ],
@@ -33,8 +23,8 @@ export const config: WebdriverIO.Config = {
         capabilities: [{
             platformName: 'Android',
             browserName: 'chrome',
-            'appium:deviceName': 'emulator-5554', // real: R58M7193KHH
-            'appium:platformVersion': '10', // real: 11
+            'appium:deviceName': 'emulator-5554', // emulator: emulator-5554, real: R58M7193KHH, pixel: Pixel_3a_API_34_extension_level_7_arm64-v8a
+            'appium:platformVersion': '10', // emulator: 10, real: 11, pixel: 14
             'appium:automationName': 'UiAutomator2',
             'appium:orientation': 'PORTRAIT',
             'appium:newCommandTimeout': 240,

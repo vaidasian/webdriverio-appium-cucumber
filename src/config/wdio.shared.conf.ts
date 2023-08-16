@@ -16,12 +16,9 @@ export const config: WebdriverIO.Config = {
         ],
     },
     runner: 'local',
-    /*
-    // [optional] cannot run with only @wdio/appium-service
     hostname: 'localhost',
-    path: '/wd/hub',
+    path: '/',
     port: 4723,
-    //*/
     exclude: [],
     capabilities: [],
     services: [],
