@@ -28,7 +28,7 @@ export const config: WebdriverIO.Config = {
             platformName: 'Android',
             browserName: 'Chrome',
             'appium:deviceName': 'Pixel_3a_API_34_extension_level_7_arm64-v8a', // real: R58M7193KHH
-            'appium:platformVersion': '14', // real: 11
+            'appium:platformVersion': '10', // real: 11
             'appium:automationName': 'UiAutomator2',
             'appium:orientation': 'PORTRAIT',
             'appium:newCommandTimeout': 240,
