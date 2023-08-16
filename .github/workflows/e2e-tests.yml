@@ -21,6 +21,19 @@ jobs:
           node-version: 18.15.x
           cache: npm
 
+      - name: Get cache key for node_modules
+        id: cache-node-modules
+        run: echo "::set-ouput name=date::$(date + '%>-%m-%W')"
+
+      - name: Cache node_modules
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-modules-${{ steps.cache-node-modules.outputs.date }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-modules-${{ steps.cache-node-modules.outputs.date }}-
+            ${{ runner.os }}-node-modules-
+
       - name: Install
         run: |
           npm ci
