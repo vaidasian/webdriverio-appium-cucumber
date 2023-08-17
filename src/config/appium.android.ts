@@ -20,7 +20,6 @@ export const config: WebdriverIO.Config = {
                 },
             }],
         ],
-        //*/
         capabilities: [{
             platformName: 'Android',
             browserName: 'chrome',
@@ -29,7 +28,5 @@ export const config: WebdriverIO.Config = {
             'appium:automationName': 'UiAutomator2',
             'appium:orientation': 'PORTRAIT',
             'appium:newCommandTimeout': 240,
-            'appium:noReset': true,
-            'appium:uiautomator2ServerLaunchTimeout': 200000,
         }],
 }

@@ -7,7 +7,7 @@ adapt android device here ./src/config/appium.android.ts
 npm i
 npm run e2e:cucumber:android:suite_product
 
-[BUG]
+[BUG] https://github.com/webdriverio/webdriverio/issues/10963
 Node version: 18.16.1
 NPM version: 9.5.1
 Platform: Android or iOS
