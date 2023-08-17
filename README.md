@@ -7,10 +7,6 @@ adapt android device here ./src/config/appium.android.ts
 npm i
 npm run e2e:cucumber:android:suite_product
 
-[Optional] Appium - Real mobile device
-npx appium-installer
-adb devices
-
 [BUG]
 Node version: 18.16.1
 NPM version: 9.5.1
@@ -40,6 +36,7 @@ See ./bugs/2023-08-15_appium_wdio_retry_multiple_scenario_issue_wdio-0-0.log for
 
 When 2 out of 3 scenarios in the feature file "./src/features/product/product.feature" will be set to @skip
 then no error will occur, see ./bugs/2023-08-15_appium_wdio_retry_single_scenario_no_issue_wdio-0-0.log.
+Could not reproduce on github actions with emulator android, see ./bugs/2023-08-16_appium_wdio_retry_multiple_scenario_no_issue_emulator_github-actions_wdio-0-0.log or GitHub Actions tab for more logs.
 
 Question: How to best use Cucumber's retry logic on appium w/o getting errors? 
 ```
