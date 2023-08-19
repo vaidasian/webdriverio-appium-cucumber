@@ -18,7 +18,7 @@ Appium version: 2.0.1
 Description:
 When running multiple scenarios in one feature file and using Cucumber's retry logic the session will be deleted after the last test run - failed or passed.
 Hence, the re-run or any other commands after that will cause the error message:
-"WARN webdriver: Request failed with status 404 due to A session is either terminated or not started".
+"ERROR webdriver: Request failed with status 404 due to A session is either terminated or not started".
 This will cause an issue on any cloud provider setup like Browserstack or SauceLabs as the device is already disconnected after the command "deleteSession()".
 
 Browserstack's solution is to remove cucumber step "Then verify empty cart page" which will not cause any error.

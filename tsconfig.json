@@ -3,9 +3,12 @@
         "allowJs": true,
         "esModuleInterop": true,
         "module": "CommonJS",
+        "outDir": "dist",
         "removeComments": true,
         "rootDir": ".",
-        "sourceMap": false,
+        "baseUrl": ".",
+        "skipLibCheck": true,
+        "sourceMap": true,
         "strictPropertyInitialization": true,
         "strictNullChecks": true,
         "target": "ESNext",
@@ -14,13 +17,23 @@
             "expect-webdriverio",
             "@wdio/globals/types",
             "@wdio/cucumber-framework",
-            "@wdio/browserstack-service"
         ],
+        "paths": {
+            "*": ["src/*"],
+        },
+        "lib": [
+            "ESNext",
+            "DOM"
+        ]
     },
     "include": [
-        "src/**/*.ts"
+        "src/**/*.ts",
+        "src/**/*.feature"
     ],
     "exclude": [
-        "node_modules"
-    ]
+        "node_modules",
+        "dist"
+    ],
+    "compileOnSave": false,
+    "buildOnSave": false,
 }
