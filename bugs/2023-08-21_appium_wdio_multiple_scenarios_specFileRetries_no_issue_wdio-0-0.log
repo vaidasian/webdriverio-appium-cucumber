@@ -1,0 +1,614 @@
+2023-08-21T11:23:32.780Z INFO @wdio/local-runner: Run worker command: run
+2023-08-21T11:23:32.825Z DEBUG @wdio/runner: init remote session
+2023-08-21T11:23:32.826Z DEBUG @wdio/utils:initialiseServices: initialise service "appium" as NPM package
+2023-08-21T11:23:33.022Z DEBUG @wdio/runner: init remote session
+2023-08-21T11:23:33.022Z INFO webdriver: Initiate new session using the WebDriver protocol
+2023-08-21T11:23:33.023Z INFO @wdio/utils: Connecting to existing driver at http://127.0.0.1:4723/
+2023-08-21T11:23:33.040Z INFO webdriver: [POST] http://127.0.0.1:4723/session
+2023-08-21T11:23:33.040Z INFO webdriver: DATA {
+  capabilities: {
+    alwaysMatch: {
+      platformName: 'Android',
+      browserName: 'Chrome',
+      'appium:deviceName': 'emulator-5554',
+      'appium:platformVersion': '12',
+      'appium:automationName': 'UiAutomator2',
+      'appium:orientation': 'PORTRAIT',
+      'appium:newCommandTimeout': 240
+    },
+    firstMatch: [ {} ]
+  },
+  desiredCapabilities: {
+    platformName: 'Android',
+    browserName: 'Chrome',
+    'appium:deviceName': 'emulator-5554',
+    'appium:platformVersion': '12',
+    'appium:automationName': 'UiAutomator2',
+    'appium:orientation': 'PORTRAIT',
+    'appium:newCommandTimeout': 240
+  }
+}
+2023-08-21T11:23:39.890Z DEBUG @wdio/utils:shim: Finished to run "beforeScenario" hook in 0ms
+2023-08-21T11:23:39.891Z DEBUG @wdio/utils:shim: Finished to run "beforeStep" hook in 0ms
+2023-08-21T11:23:39.892Z INFO webdriver: COMMAND navigateTo("https://saucedemo.com/")
+2023-08-21T11:23:39.892Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/url
+2023-08-21T11:23:39.892Z INFO webdriver: DATA { url: 'https://saucedemo.com/' }
+2023-08-21T11:23:40.356Z INFO webdriver: RESULT null
+2023-08-21T11:23:40.357Z DEBUG @wdio/utils:shim: Finished to run "beforeStep" hook in 0ms
+2023-08-21T11:23:40.360Z INFO webdriver: COMMAND findElement("css selector", "*[data-test="login-button"]")
+2023-08-21T11:23:40.360Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/element
+2023-08-21T11:23:40.360Z INFO webdriver: DATA { using: 'css selector', value: '*[data-test="login-button"]' }
+2023-08-21T11:23:40.385Z INFO webdriver: RESULT {
+  ELEMENT: '52e22b6a-7a73-4416-add2-76c3afbe0f10',
+  'element-6066-11e4-a52e-4f735466cecf': '52e22b6a-7a73-4416-add2-76c3afbe0f10'
+}
+2023-08-21T11:23:40.388Z INFO webdriver: COMMAND isElementDisplayed("52e22b6a-7a73-4416-add2-76c3afbe0f10")
+2023-08-21T11:23:40.389Z INFO webdriver: [GET] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/element/52e22b6a-7a73-4416-add2-76c3afbe0f10/displayed
+2023-08-21T11:23:40.412Z INFO webdriver: RESULT true
+2023-08-21T11:23:40.412Z INFO webdriver: COMMAND getTitle()
+2023-08-21T11:23:40.412Z INFO webdriver: [GET] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/title
+2023-08-21T11:23:40.418Z INFO webdriver: RESULT Swag Labs
+2023-08-21T11:23:40.419Z INFO webdriver: COMMAND findElement("css selector", "*[data-test="login-button"]")
+2023-08-21T11:23:40.419Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/element
+2023-08-21T11:23:40.419Z INFO webdriver: DATA { using: 'css selector', value: '*[data-test="login-button"]' }
+2023-08-21T11:23:40.427Z INFO webdriver: RESULT {
+  ELEMENT: '52e22b6a-7a73-4416-add2-76c3afbe0f10',
+  'element-6066-11e4-a52e-4f735466cecf': '52e22b6a-7a73-4416-add2-76c3afbe0f10'
+}
+2023-08-21T11:23:40.429Z INFO webdriver: COMMAND isElementDisplayed("52e22b6a-7a73-4416-add2-76c3afbe0f10")
+2023-08-21T11:23:40.429Z INFO webdriver: [GET] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/element/52e22b6a-7a73-4416-add2-76c3afbe0f10/displayed
+2023-08-21T11:23:40.442Z INFO webdriver: RESULT true
+2023-08-21T11:23:40.443Z DEBUG @wdio/utils:shim: Finished to run "beforeStep" hook in 0ms
+2023-08-21T11:23:40.444Z INFO webdriver: COMMAND findElement("css selector", "*[data-test="username"]")
+2023-08-21T11:23:40.444Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/element
+2023-08-21T11:23:40.444Z INFO webdriver: DATA { using: 'css selector', value: '*[data-test="username"]' }
+2023-08-21T11:23:40.485Z INFO webdriver: RESULT {
+  ELEMENT: '9f4c9f5f-ec30-4cb6-991e-001ade611be0',
+  'element-6066-11e4-a52e-4f735466cecf': '9f4c9f5f-ec30-4cb6-991e-001ade611be0'
+}
+2023-08-21T11:23:40.487Z INFO webdriver: COMMAND elementClear("9f4c9f5f-ec30-4cb6-991e-001ade611be0")
+2023-08-21T11:23:40.487Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/element/9f4c9f5f-ec30-4cb6-991e-001ade611be0/clear
+2023-08-21T11:23:40.568Z INFO webdriver: RESULT null
+2023-08-21T11:23:40.568Z INFO webdriver: COMMAND elementSendKeys("9f4c9f5f-ec30-4cb6-991e-001ade611be0", "standard_user")
+2023-08-21T11:23:40.568Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/element/9f4c9f5f-ec30-4cb6-991e-001ade611be0/value
+2023-08-21T11:23:40.568Z INFO webdriver: DATA { text: 'standard_user' }
+2023-08-21T11:23:40.810Z INFO webdriver: RESULT null
+2023-08-21T11:23:40.811Z INFO webdriver: COMMAND findElement("css selector", "*[data-test="password"]")
+2023-08-21T11:23:40.811Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/element
+2023-08-21T11:23:40.811Z INFO webdriver: DATA { using: 'css selector', value: '*[data-test="password"]' }
+2023-08-21T11:23:40.852Z INFO webdriver: RESULT {
+  ELEMENT: 'd2760a35-4d57-4693-b2ca-6dfcf4321920',
+  'element-6066-11e4-a52e-4f735466cecf': 'd2760a35-4d57-4693-b2ca-6dfcf4321920'
+}
+2023-08-21T11:23:40.855Z INFO webdriver: COMMAND elementClear("d2760a35-4d57-4693-b2ca-6dfcf4321920")
+2023-08-21T11:23:40.856Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/element/d2760a35-4d57-4693-b2ca-6dfcf4321920/clear
+2023-08-21T11:23:40.901Z INFO webdriver: RESULT null
+2023-08-21T11:23:40.901Z INFO webdriver: COMMAND elementSendKeys("d2760a35-4d57-4693-b2ca-6dfcf4321920", "secret_sauce")
+2023-08-21T11:23:40.902Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/element/d2760a35-4d57-4693-b2ca-6dfcf4321920/value
+2023-08-21T11:23:40.902Z INFO webdriver: DATA { text: 'secret_sauce' }
+2023-08-21T11:23:41.090Z INFO webdriver: RESULT null
+2023-08-21T11:23:41.091Z INFO webdriver: COMMAND findElement("css selector", "*[data-test="login-button"]")
+2023-08-21T11:23:41.091Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/element
+2023-08-21T11:23:41.091Z INFO webdriver: DATA { using: 'css selector', value: '*[data-test="login-button"]' }
+2023-08-21T11:23:41.171Z INFO webdriver: RESULT {
+  ELEMENT: '52e22b6a-7a73-4416-add2-76c3afbe0f10',
+  'element-6066-11e4-a52e-4f735466cecf': '52e22b6a-7a73-4416-add2-76c3afbe0f10'
+}
+2023-08-21T11:23:41.175Z INFO webdriver: COMMAND elementClick("52e22b6a-7a73-4416-add2-76c3afbe0f10")
+2023-08-21T11:23:41.176Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/element/52e22b6a-7a73-4416-add2-76c3afbe0f10/click
+2023-08-21T11:23:41.386Z INFO webdriver: RESULT null
+2023-08-21T11:23:41.388Z DEBUG @wdio/utils:shim: Finished to run "beforeStep" hook in 1ms
+2023-08-21T11:23:41.389Z INFO webdriver: COMMAND findElement("css selector", ".app_logo")
+2023-08-21T11:23:41.389Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/element
+2023-08-21T11:23:41.389Z INFO webdriver: DATA { using: 'css selector', value: '.app_logo' }
+2023-08-21T11:23:41.436Z INFO webdriver: RESULT {
+  ELEMENT: '0034dfa1-7640-4b1c-b228-da41179b959b',
+  'element-6066-11e4-a52e-4f735466cecf': '0034dfa1-7640-4b1c-b228-da41179b959b'
+}
+2023-08-21T11:23:41.438Z INFO webdriver: COMMAND isElementDisplayed("0034dfa1-7640-4b1c-b228-da41179b959b")
+2023-08-21T11:23:41.438Z INFO webdriver: [GET] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/element/0034dfa1-7640-4b1c-b228-da41179b959b/displayed
+2023-08-21T11:23:41.458Z INFO webdriver: RESULT true
+2023-08-21T11:23:41.459Z INFO webdriver: COMMAND findElements("css selector", ".inventory_item")
+2023-08-21T11:23:41.460Z INFO webdriver: COMMAND getElementText("0034dfa1-7640-4b1c-b228-da41179b959b")
+2023-08-21T11:23:41.460Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:41.460Z INFO webdriver: DATA { using: 'css selector', value: '.inventory_item' }
+2023-08-21T11:23:41.460Z INFO webdriver: [GET] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/element/0034dfa1-7640-4b1c-b228-da41179b959b/text
+2023-08-21T11:23:41.470Z INFO webdriver: RESULT [
+  {
+    ELEMENT: '4b2f583d-528f-49d3-9f70-e51bd93187c0',
+    'element-6066-11e4-a52e-4f735466cecf': '4b2f583d-528f-49d3-9f70-e51bd93187c0'
+  },
+  {
+    ELEMENT: '8d815e48-21d9-4d00-9435-65971a35e006',
+    'element-6066-11e4-a52e-4f735466cecf': '8d815e48-21d9-4d00-9435-65971a35e006'
+  },
+  {
+    ELEMENT: '423024b5-810b-4f81-97f2-4abaa21b1b00',
+    'element-6066-11e4-a52e-4f735466cecf': '423024b5-810b-4f81-97f2-4abaa21b1b00'
+  },
+  {
+    ELEMENT: 'ff75e644-15ea-4cfe-af57-65cfc0a143f9',
+    'element-6066-11e4-a52e-4f735466cecf': 'ff75e644-15ea-4cfe-af57-65cfc0a143f9'
+  },
+  {
+    ELEMENT: 'ea4a3ce2-9e61-4879-b6a7-8b8ddc53b8a0',
+    'element-6066-11e4-a52e-4f735466cecf': 'ea4a3ce2-9e61-4879-b6a7-8b8ddc53b8a0'
+  },
+  {
+    ELEMENT: '02f99fe7-09b7-498b-ab7a-44520297b595',
+    'element-6066-11e4-a52e-4f735466cecf': '02f99fe7-09b7-498b-ab7a-44520297b595'
+  }
+]
+2023-08-21T11:23:41.477Z INFO webdriver: COMMAND findElements("css selector", ".inventory_item .inventory_item_name")
+2023-08-21T11:23:41.477Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:41.478Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '.inventory_item .inventory_item_name'
+}
+2023-08-21T11:23:41.503Z INFO webdriver: RESULT Swag Labs
+2023-08-21T11:23:41.520Z INFO webdriver: RESULT [
+  {
+    ELEMENT: '1a821152-3577-4d1a-a5b8-573f434ef153',
+    'element-6066-11e4-a52e-4f735466cecf': '1a821152-3577-4d1a-a5b8-573f434ef153'
+  },
+  {
+    ELEMENT: '5031307f-0d11-4ca3-bb28-b976fd88a6e4',
+    'element-6066-11e4-a52e-4f735466cecf': '5031307f-0d11-4ca3-bb28-b976fd88a6e4'
+  },
+  {
+    ELEMENT: '11049060-34f9-4eaf-b6ac-5e8af432ec8f',
+    'element-6066-11e4-a52e-4f735466cecf': '11049060-34f9-4eaf-b6ac-5e8af432ec8f'
+  },
+  {
+    ELEMENT: '31e697a8-50b6-43d6-a015-4dcbb5e7948b',
+    'element-6066-11e4-a52e-4f735466cecf': '31e697a8-50b6-43d6-a015-4dcbb5e7948b'
+  },
+  {
+    ELEMENT: 'c260ce35-3ff9-4180-8d17-892695c3bf92',
+    'element-6066-11e4-a52e-4f735466cecf': 'c260ce35-3ff9-4180-8d17-892695c3bf92'
+  },
+  {
+    ELEMENT: 'fb4f81c6-9843-4b92-9948-f24c29858065',
+    'element-6066-11e4-a52e-4f735466cecf': 'fb4f81c6-9843-4b92-9948-f24c29858065'
+  }
+]
+2023-08-21T11:23:41.524Z INFO webdriver: COMMAND isElementDisplayed("4b2f583d-528f-49d3-9f70-e51bd93187c0")
+2023-08-21T11:23:41.524Z INFO webdriver: [GET] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/element/4b2f583d-528f-49d3-9f70-e51bd93187c0/displayed
+2023-08-21T11:23:41.533Z INFO webdriver: RESULT true
+2023-08-21T11:23:41.533Z INFO webdriver: COMMAND findElements("css selector", ".inventory_item")
+2023-08-21T11:23:41.533Z INFO webdriver: COMMAND getElementText("1a821152-3577-4d1a-a5b8-573f434ef153")
+2023-08-21T11:23:41.534Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:41.534Z INFO webdriver: DATA { using: 'css selector', value: '.inventory_item' }
+2023-08-21T11:23:41.534Z INFO webdriver: [GET] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/element/1a821152-3577-4d1a-a5b8-573f434ef153/text
+2023-08-21T11:23:41.535Z DEBUG @wdio/utils:shim: Finished to run "beforeStep" hook in 1ms
+2023-08-21T11:23:41.535Z INFO webdriver: COMMAND findElements("css selector", ".inventory_item .inventory_item_name")
+2023-08-21T11:23:41.535Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:41.535Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '.inventory_item .inventory_item_name'
+}
+2023-08-21T11:23:41.542Z INFO webdriver: RESULT [
+  {
+    ELEMENT: '4b2f583d-528f-49d3-9f70-e51bd93187c0',
+    'element-6066-11e4-a52e-4f735466cecf': '4b2f583d-528f-49d3-9f70-e51bd93187c0'
+  },
+  {
+    ELEMENT: '8d815e48-21d9-4d00-9435-65971a35e006',
+    'element-6066-11e4-a52e-4f735466cecf': '8d815e48-21d9-4d00-9435-65971a35e006'
+  },
+  {
+    ELEMENT: '423024b5-810b-4f81-97f2-4abaa21b1b00',
+    'element-6066-11e4-a52e-4f735466cecf': '423024b5-810b-4f81-97f2-4abaa21b1b00'
+  },
+  {
+    ELEMENT: 'ff75e644-15ea-4cfe-af57-65cfc0a143f9',
+    'element-6066-11e4-a52e-4f735466cecf': 'ff75e644-15ea-4cfe-af57-65cfc0a143f9'
+  },
+  {
+    ELEMENT: 'ea4a3ce2-9e61-4879-b6a7-8b8ddc53b8a0',
+    'element-6066-11e4-a52e-4f735466cecf': 'ea4a3ce2-9e61-4879-b6a7-8b8ddc53b8a0'
+  },
+  {
+    ELEMENT: '02f99fe7-09b7-498b-ab7a-44520297b595',
+    'element-6066-11e4-a52e-4f735466cecf': '02f99fe7-09b7-498b-ab7a-44520297b595'
+  }
+]
+2023-08-21T11:23:41.551Z INFO webdriver: RESULT Sauce Labs Backpack
+2023-08-21T11:23:41.557Z INFO webdriver: RESULT [
+  {
+    ELEMENT: '1a821152-3577-4d1a-a5b8-573f434ef153',
+    'element-6066-11e4-a52e-4f735466cecf': '1a821152-3577-4d1a-a5b8-573f434ef153'
+  },
+  {
+    ELEMENT: '5031307f-0d11-4ca3-bb28-b976fd88a6e4',
+    'element-6066-11e4-a52e-4f735466cecf': '5031307f-0d11-4ca3-bb28-b976fd88a6e4'
+  },
+  {
+    ELEMENT: '11049060-34f9-4eaf-b6ac-5e8af432ec8f',
+    'element-6066-11e4-a52e-4f735466cecf': '11049060-34f9-4eaf-b6ac-5e8af432ec8f'
+  },
+  {
+    ELEMENT: '31e697a8-50b6-43d6-a015-4dcbb5e7948b',
+    'element-6066-11e4-a52e-4f735466cecf': '31e697a8-50b6-43d6-a015-4dcbb5e7948b'
+  },
+  {
+    ELEMENT: 'c260ce35-3ff9-4180-8d17-892695c3bf92',
+    'element-6066-11e4-a52e-4f735466cecf': 'c260ce35-3ff9-4180-8d17-892695c3bf92'
+  },
+  {
+    ELEMENT: 'fb4f81c6-9843-4b92-9948-f24c29858065',
+    'element-6066-11e4-a52e-4f735466cecf': 'fb4f81c6-9843-4b92-9948-f24c29858065'
+  }
+]
+2023-08-21T11:23:41.561Z INFO webdriver: COMMAND executeScript("return ((elem, options) => elem.scrollIntoView(options)).apply(null, arguments)", <object>)
+2023-08-21T11:23:41.561Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/execute/sync
+2023-08-21T11:23:41.561Z INFO webdriver: DATA {
+  script: 'return ((elem, options) => elem.scrollIntoView(options)).apply(null, arguments)',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': '1a821152-3577-4d1a-a5b8-573f434ef153',
+      ELEMENT: '1a821152-3577-4d1a-a5b8-573f434ef153'
+    },
+    { block: 'start', inline: 'nearest' }
+  ]
+}
+2023-08-21T11:23:41.573Z INFO webdriver: RESULT null
+2023-08-21T11:23:41.573Z INFO webdriver: COMMAND elementClick("1a821152-3577-4d1a-a5b8-573f434ef153")
+2023-08-21T11:23:41.574Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/element/1a821152-3577-4d1a-a5b8-573f434ef153/click
+2023-08-21T11:23:41.647Z INFO webdriver: RESULT null
+2023-08-21T11:23:41.647Z DEBUG @wdio/utils:shim: Finished to run "beforeStep" hook in 0ms
+2023-08-21T11:23:41.647Z INFO webdriver: COMMAND findElement("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:41.648Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/element
+2023-08-21T11:23:41.648Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:41.660Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"css selector","selector":"*[data-test="remove-sauce-labs-backpack"]"}\n' +
+    '  (Session info: chrome=91.0.4472.114)',
+  stacktrace: '0   chromedriver_mac64_m1_v91.0.4472.10 0x0000000102610fa8 chromedriver_mac64_m1_v91.0.4472.10 + 2559912\n' +
+    '1   chromedriver_mac64_m1_v91.0.4472.10 0x0000000102b9db6c chromedriver_mac64_m1_v91.0.4472.10 + 8379244\n' +
+    '2   chromedriver_mac64_m1_v91.0.4472.10 0x00000001023c61e0 chromedriver_mac64_m1_v91.0.4472.10 + 156128\n' +
+    '3   chromedriver_mac64_m1_v91.0.4472.10 0x00000001023f4b48 chromedriver_mac64_m1_v91.0.4472.10 + 346952\n' +
+    '4   chromedriver_mac64_m1_v91.0.4472.10 0x000000010241ce5c chromedriver_mac64_m1_v91.0.4472.10 + 511580\n' +
+    '5   chromedriver_mac64_m1_v91.0.4472.10 0x00000001023ea140 chromedriver_mac64_m1_v91.0.4472.10 + 303424\n' +
+    '6   chromedriver_mac64_m1_v91.0.4472.10 0x00000001025dc63c chromedriver_mac64_m1_v91.0.4472.10 + 2344508\n' +
+    '7   chromedriver_mac64_m1_v91.0.4472.10 0x00000001025ed214 chromedriver_mac64_m1_v91.0.4472.10 + 2413076\n' +
+    '8   chromedriver_mac64_m1_v91.0.4472.10 0x00000001025c34e4 chromedriver_mac64_m1_v91.0.4472.10 + 2241764\n' +
+    '9   chromedriver_mac64_m1_v91.0.4472.10 0x00000001025ee34c chromedriver_mac64_m1_v91.0.4472.10 + 2417484\n' +
+    '10  chromedriver_mac64_m1_v91.0.4472.10 0x00000001025d35f4 chromedriver_mac64_m1_v91.0.4472.10 + 2307572\n' +
+    '11  chromedriver_mac64_m1_v91.0.4472.10 0x0000000102605954 chromedriver_mac64_m1_v91.0.4472.10 + 2513236\n' +
+    '12  chromedriver_mac64_m1_v91.0.4472.10 0x0000000102605acc chromedriver_mac64_m1_v91.0.4472.10 + 2513612\n' +
+    '13  chromedriver_mac64_m1_v91.0.4472.10 0x0000000102615898 chromedriver_mac64_m1_v91.0.4472.10 + 2578584\n' +
+    '14  libsystem_pthread.dylib             0x000000019c067fa8 _pthread_start + 148\n' +
+    '15  libsystem_pthread.dylib             0x000000019c062da0 thread_start + 8\n'
+}
+2023-08-21T11:23:41.661Z DEBUG webdriverio: command scrollIntoView was called on an element ("*[data-test="remove-sauce-labs-backpack"]") that wasn't found, waiting for it...
+2023-08-21T11:23:41.662Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:41.662Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:41.662Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:41.671Z INFO webdriver: RESULT []
+2023-08-21T11:23:42.164Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:42.164Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:42.164Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:42.181Z INFO webdriver: RESULT []
+2023-08-21T11:23:42.664Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:42.665Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:42.665Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:42.693Z INFO webdriver: RESULT []
+2023-08-21T11:23:43.163Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:43.163Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:43.163Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:43.183Z INFO webdriver: RESULT []
+2023-08-21T11:23:43.664Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:43.665Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:43.665Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:43.686Z INFO webdriver: RESULT []
+2023-08-21T11:23:44.163Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:44.164Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:44.164Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:44.182Z INFO webdriver: RESULT []
+2023-08-21T11:23:44.663Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:44.664Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:44.664Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:44.686Z INFO webdriver: RESULT []
+2023-08-21T11:23:45.164Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:45.165Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:45.165Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:45.185Z INFO webdriver: RESULT []
+2023-08-21T11:23:45.663Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:45.664Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:45.664Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:45.682Z INFO webdriver: RESULT []
+2023-08-21T11:23:46.164Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:46.165Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:46.165Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:46.184Z INFO webdriver: RESULT []
+2023-08-21T11:23:46.665Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:46.666Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:46.666Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:46.686Z INFO webdriver: RESULT []
+2023-08-21T11:23:47.166Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:47.168Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:47.168Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:47.189Z INFO webdriver: RESULT []
+2023-08-21T11:23:47.665Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:47.665Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:47.665Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:47.686Z INFO webdriver: RESULT []
+2023-08-21T11:23:48.165Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:48.166Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:48.166Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:48.185Z INFO webdriver: RESULT []
+2023-08-21T11:23:48.665Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:48.666Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:48.666Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:48.684Z INFO webdriver: RESULT []
+2023-08-21T11:23:49.164Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:49.165Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:49.165Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:49.185Z INFO webdriver: RESULT []
+2023-08-21T11:23:49.663Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:49.664Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:49.664Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:49.685Z INFO webdriver: RESULT []
+2023-08-21T11:23:50.164Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:50.164Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:50.164Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:50.185Z INFO webdriver: RESULT []
+2023-08-21T11:23:50.663Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:50.663Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:50.663Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:50.683Z INFO webdriver: RESULT []
+2023-08-21T11:23:51.164Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:51.165Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:51.165Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:51.187Z INFO webdriver: RESULT []
+2023-08-21T11:23:51.665Z INFO webdriver: COMMAND findElement("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:51.665Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/element
+2023-08-21T11:23:51.666Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:51.693Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"css selector","selector":"*[data-test="remove-sauce-labs-backpack"]"}\n' +
+    '  (Session info: chrome=91.0.4472.114)',
+  stacktrace: '0   chromedriver_mac64_m1_v91.0.4472.10 0x0000000102610fa8 chromedriver_mac64_m1_v91.0.4472.10 + 2559912\n' +
+    '1   chromedriver_mac64_m1_v91.0.4472.10 0x0000000102b9db6c chromedriver_mac64_m1_v91.0.4472.10 + 8379244\n' +
+    '2   chromedriver_mac64_m1_v91.0.4472.10 0x00000001023c61e0 chromedriver_mac64_m1_v91.0.4472.10 + 156128\n' +
+    '3   chromedriver_mac64_m1_v91.0.4472.10 0x00000001023f4b48 chromedriver_mac64_m1_v91.0.4472.10 + 346952\n' +
+    '4   chromedriver_mac64_m1_v91.0.4472.10 0x000000010241ce5c chromedriver_mac64_m1_v91.0.4472.10 + 511580\n' +
+    '5   chromedriver_mac64_m1_v91.0.4472.10 0x00000001023ea140 chromedriver_mac64_m1_v91.0.4472.10 + 303424\n' +
+    '6   chromedriver_mac64_m1_v91.0.4472.10 0x00000001025dc63c chromedriver_mac64_m1_v91.0.4472.10 + 2344508\n' +
+    '7   chromedriver_mac64_m1_v91.0.4472.10 0x00000001025ed214 chromedriver_mac64_m1_v91.0.4472.10 + 2413076\n' +
+    '8   chromedriver_mac64_m1_v91.0.4472.10 0x00000001025c34e4 chromedriver_mac64_m1_v91.0.4472.10 + 2241764\n' +
+    '9   chromedriver_mac64_m1_v91.0.4472.10 0x00000001025ee34c chromedriver_mac64_m1_v91.0.4472.10 + 2417484\n' +
+    '10  chromedriver_mac64_m1_v91.0.4472.10 0x00000001025d35f4 chromedriver_mac64_m1_v91.0.4472.10 + 2307572\n' +
+    '11  chromedriver_mac64_m1_v91.0.4472.10 0x0000000102605954 chromedriver_mac64_m1_v91.0.4472.10 + 2513236\n' +
+    '12  chromedriver_mac64_m1_v91.0.4472.10 0x0000000102605acc chromedriver_mac64_m1_v91.0.4472.10 + 2513612\n' +
+    '13  chromedriver_mac64_m1_v91.0.4472.10 0x0000000102615898 chromedriver_mac64_m1_v91.0.4472.10 + 2578584\n' +
+    '14  libsystem_pthread.dylib             0x000000019c067fa8 _pthread_start + 148\n' +
+    '15  libsystem_pthread.dylib             0x000000019c062da0 thread_start + 8\n'
+}
+2023-08-21T11:23:51.696Z DEBUG webdriverio: command scrollIntoView was called on an element ("*[data-test="remove-sauce-labs-backpack"]") that wasn't found, waiting for it...
+2023-08-21T11:23:51.696Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:51.697Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:51.697Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:51.716Z INFO webdriver: RESULT []
+2023-08-21T11:23:52.198Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:52.199Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:52.199Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:52.223Z INFO webdriver: RESULT []
+2023-08-21T11:23:52.699Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:52.700Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:52.700Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:52.720Z INFO webdriver: RESULT []
+2023-08-21T11:23:53.198Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:53.199Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:53.199Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:53.220Z INFO webdriver: RESULT []
+2023-08-21T11:23:53.698Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:53.699Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:53.699Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:53.720Z INFO webdriver: RESULT []
+2023-08-21T11:23:54.197Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:54.198Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:54.198Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:54.222Z INFO webdriver: RESULT []
+2023-08-21T11:23:54.698Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:54.699Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:54.699Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:54.720Z INFO webdriver: RESULT []
+2023-08-21T11:23:55.199Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:55.201Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:55.201Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:55.223Z INFO webdriver: RESULT []
+2023-08-21T11:23:55.698Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:55.698Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:55.698Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:55.716Z INFO webdriver: RESULT []
+2023-08-21T11:23:56.198Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:56.199Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:56.199Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:56.224Z INFO webdriver: RESULT []
+2023-08-21T11:23:56.698Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:56.699Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:56.699Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:56.720Z INFO webdriver: RESULT []
+2023-08-21T11:23:57.198Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:57.199Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:57.199Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:57.220Z INFO webdriver: RESULT []
+2023-08-21T11:23:57.698Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:57.699Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:57.699Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:57.734Z INFO webdriver: RESULT []
+2023-08-21T11:23:58.197Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:58.198Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:58.198Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:58.218Z INFO webdriver: RESULT []
+2023-08-21T11:23:58.697Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:58.698Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:58.698Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:58.720Z INFO webdriver: RESULT []
+2023-08-21T11:23:59.198Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:59.199Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:59.199Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:59.218Z INFO webdriver: RESULT []
+2023-08-21T11:23:59.698Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:23:59.699Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:23:59.699Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:23:59.720Z INFO webdriver: RESULT []
+2023-08-21T11:24:00.198Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:24:00.199Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:24:00.200Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:24:00.226Z INFO webdriver: RESULT []
+2023-08-21T11:24:00.698Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:24:00.699Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:24:00.699Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:24:00.715Z INFO webdriver: RESULT []
+2023-08-21T11:24:01.198Z INFO webdriver: COMMAND findElements("css selector", "*[data-test="remove-sauce-labs-backpack"]")
+2023-08-21T11:24:01.198Z INFO webdriver: [POST] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/elements
+2023-08-21T11:24:01.198Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '*[data-test="remove-sauce-labs-backpack"]'
+}
+2023-08-21T11:24:01.224Z INFO webdriver: RESULT []
+2023-08-21T11:24:01.707Z INFO webdriver: COMMAND getLogTypes()
+2023-08-21T11:24:01.708Z INFO webdriver: [GET] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/log/types
+2023-08-21T11:24:01.720Z DEBUG webdriver: request failed due to response error: unknown command
+2023-08-21T11:24:01.720Z WARN webdriver: Request failed with status 404 due to unknown command: Cannot call non W3C standard command while in W3C mode
+2023-08-21T11:24:01.720Z INFO webdriver: Retrying 1/3
+2023-08-21T11:24:01.720Z INFO webdriver: [GET] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/log/types
+2023-08-21T11:24:01.728Z DEBUG webdriver: request failed due to response error: unknown command
+2023-08-21T11:24:01.728Z WARN webdriver: Request failed with status 404 due to unknown command: Cannot call non W3C standard command while in W3C mode
+2023-08-21T11:24:01.728Z INFO webdriver: Retrying 2/3
+2023-08-21T11:24:01.728Z INFO webdriver: [GET] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/log/types
+2023-08-21T11:24:01.734Z DEBUG webdriver: request failed due to response error: unknown command
+2023-08-21T11:24:01.734Z WARN webdriver: Request failed with status 404 due to unknown command: Cannot call non W3C standard command while in W3C mode
+2023-08-21T11:24:01.734Z INFO webdriver: Retrying 3/3
+2023-08-21T11:24:01.734Z INFO webdriver: [GET] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c/log/types
+2023-08-21T11:24:01.739Z DEBUG webdriver: request failed due to response error: unknown command
+2023-08-21T11:24:01.739Z ERROR webdriver: Request failed with status 404 due to unknown command: unknown command: Cannot call non W3C standard command while in W3C mode
+2023-08-21T11:24:01.740Z INFO webdriver: COMMAND deleteSession()
+2023-08-21T11:24:01.740Z INFO webdriver: [DELETE] http://127.0.0.1:4723/session/69e5078b-f730-4c73-899a-fbc48e126d0c
+2023-08-21T11:24:01.957Z INFO webdriver: RESULT null

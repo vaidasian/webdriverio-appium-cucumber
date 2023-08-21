@@ -11,7 +11,7 @@ npm run e2e:cucumber:android:suite_product
 Node version: 18.16.1
 NPM version: 9.5.1
 Platform: Android or iOS
-Platorm version: 11
+Platform version: 11
 Real Device: true
 Appium version: 2.0.1
 
@@ -20,9 +20,6 @@ When running multiple scenarios in one feature file and using Cucumber's retry l
 Hence, the re-run or any other commands after that will cause the error message:
 "ERROR webdriver: Request failed with status 404 due to A session is either terminated or not started".
 This will cause an issue on any cloud provider setup like Browserstack or SauceLabs as the device is already disconnected after the command "deleteSession()".
-
-Browserstack's solution is to remove cucumber step "Then verify empty cart page" which will not cause any error.
-This is not a proper and future oriented solution.
 
 Attachments:
 See ./bugs/2023-08-15_appium_wdio_retry_multiple_scenario_issue_wdio-0-0.log for a detailed webdriverio test log.
@@ -38,5 +35,7 @@ When 2 out of 3 scenarios in the feature file "./src/features/product/product.fe
 then no error will occur, see ./bugs/2023-08-15_appium_wdio_retry_single_scenario_no_issue_wdio-0-0.log.
 Could not reproduce on github actions with emulator android, see ./bugs/2023-08-16_appium_wdio_retry_multiple_scenario_no_issue_emulator_github-actions_wdio-0-0.log or GitHub Actions tab for more logs.
 
-Question: How to best use Cucumber's retry logic on appium w/o getting errors? 
+Question: How to best use Cucumber's retry logic on appium w/o getting errors?
+
+Current workaround: Use only one scenario per feature file.
 ```
